@@ -1,0 +1,89 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    perspective: 1px;
+    /* transform-style: preserve-3d; */
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+header {
+    /* display: flex; */
+    /* flex: 1 0 auto; */
+    /* position: relative; */
+    /* z-index: -1; */
+    /* height: 100vh; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* transform: translateZ(-2px) scale(2); */
+    /* background: url(https://loremflickr.com/1000/1000); */
+}
+
+header h1 {
+    margin-top: -80vh;
+    letter-spacing: 10px;
+    font-family: Open Sans;
+    color: whitesmoke;
+    text-align: center;
+    font-size: 100px;
+    font-weight: 800;
+    /* line-height: 200px; */
+}
+
+header p {
+    font-family: Open Sans;
+    color: whitesmoke;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 20vh;
+}
+
+.header-background {
+    height:  100vh;
+    background: repeating-linear-gradient( rgb(102, 204, 102), rgb(102, 204, 102) 30px, rgb(92, 184, 92) 30px, rgb(92, 184, 92) 60px );;
+}
+
+main {
+    display: block;
+    position: relative;
+    background-color: white;
+}
+
+.parallax {
+    perspective: 1px;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.parallax__layer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.parallax__group {
+    position: relative;
+    height: 100vh;
+    transform-style: preserve-3d;
+        /* transform: translate3d(700px, 0, -800px) rotateY(30deg); */
+
+}
+
+.parallax__layer--base {
+    transform: translateZ(0);
+}
+
+.parallax__layer--back {
+    transform: translateZ(-1px) scale(2);
+}
+
+.parallax__layer--deep {
+  transform: translateZ(-2px) scale(3);
+}
