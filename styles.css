@@ -10,11 +10,15 @@ body, html, head {
     overflow-y: scroll;
 }
 
+header {
+    color: white;
+    font-family: Open Sans;
+    /* text-shadow: 1px 1px 2px #333; */
+}
+
 header h1 {
     margin-top: -80vh;
     letter-spacing: 10px;
-    font-family: Open Sans;
-    color: whitesmoke;
     text-align: center;
     font-size: 100px;
     font-weight: 800;
@@ -22,8 +26,6 @@ header h1 {
 }
 
 header p {
-    font-family: Open Sans;
-    color: whitesmoke;
     text-align: center;
     font-size: 20px;
     margin-top: 20vh;
@@ -31,7 +33,11 @@ header p {
 
 .header-background {
     height:  100vh;
-    background: repeating-linear-gradient( rgb(102, 204, 102), rgb(102, 204, 102) 30px, rgb(92, 184, 92) 30px, rgb(92, 184, 92) 60px );;
+    /* background-image: url(img/illust_wide.png); */
+    background-image: url(img/roofs.jpeg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
 }
 
 main {
