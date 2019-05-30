@@ -48,12 +48,42 @@ main {
 }
 
 article {
-    max-width: 700px;
-    margin: 0 auto;
-    padding-top:1px;
+    padding-top: 1px;
 }
 
-/***** Typography *********/
+figure.initial {
+    margin: 20px auto -80px auto;
+}
+
+footer {
+    height:  100px;
+    position: sticky;
+    width: 100% !important;
+    max-width: 100%;
+    background-color: whitesmoke;
+    color: gray;
+    padding-top: 20px;
+    margin: 0;
+    text-align: center;
+}
+
+footer p {
+
+}
+
+@media screen and (min-width: 40em) {
+    .screenshots {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .screenshots img {
+        flex: 0 0 48%;
+        -webkit-box-flex: 0 0 48%;
+        -webkit-flex: 0 0 48%;
+        -ms-flex: 0 0 48%;
+    }
+}
 
 /***** Parallax effect ******/
 
