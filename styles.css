@@ -1,26 +1,13 @@
-body {
+body, html, head {
     padding: 0;
     margin: 0;
 }
 
 .container {
     perspective: 1px;
-    /* transform-style: preserve-3d; */
     height: 100vh;
     overflow-x: hidden;
     overflow-y: scroll;
-}
-
-header {
-    /* display: flex; */
-    /* flex: 1 0 auto; */
-    /* position: relative; */
-    /* z-index: -1; */
-    /* height: 100vh; */
-    /* justify-content: center; */
-    /* align-items: center; */
-    /* transform: translateZ(-2px) scale(2); */
-    /* background: url(https://loremflickr.com/1000/1000); */
 }
 
 header h1 {
@@ -48,42 +35,60 @@ header p {
 }
 
 main {
+    max-width: 100%;
     display: block;
     position: relative;
     background-color: white;
 }
 
+article {
+    max-width: 700px;
+    margin: 0 auto;
+    padding-top:1px;
+}
+
+/***** Typography *********/
+
+/***** Parallax effect ******/
+
 .parallax {
+    max-width: 100%;
+    margin: 0;
     perspective: 1px;
     height: 100vh;
     overflow-x: hidden;
     overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+
 }
 
 .parallax__layer {
-    position: absolute;
+    position: relative;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
+
 }
 
 .parallax__group {
+    max-width: 100%;
     position: relative;
     height: 100vh;
     transform-style: preserve-3d;
-        /* transform: translate3d(700px, 0, -800px) rotateY(30deg); */
-
 }
 
 .parallax__layer--base {
+    max-width: 100%;
     transform: translateZ(0);
 }
 
 .parallax__layer--back {
+    max-width: 100%;
     transform: translateZ(-1px) scale(2);
 }
 
 .parallax__layer--deep {
+    max-width: 100%;
   transform: translateZ(-2px) scale(3);
 }
