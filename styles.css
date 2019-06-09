@@ -86,6 +86,46 @@ footer a, footer p{
     }
 }
 
+/***** Index *******/
+
+.presentation {
+    display: flex;
+}
+
+.presentation > figure, .presentation > h1 {
+    flex:  0 0 48%;
+}
+
+.presentation > figure {
+    margin-top: 80px;
+
+}
+
+
+.presentation > figure > img {
+    -webkit-clip-path: circle(150px at center);
+            clip-path: circle(150px at center);
+}
+
+@media screen and (max-width: 40em) {
+    .presentation > h1 {
+        flex: 0 0 70%;
+    }
+    .presentation > figure {
+        flex:  0 0 30%;
+    }
+
+    .presentation > figure > img {
+        margin-top: 45px;
+        width: 150px;
+        height:  150px;
+        -webkit-clip-path: circle(75px at center);
+                clip-path: circle(75px at center);
+    }
+
+}
+
+
 /***** Parallax effect ******/
 
 .parallax {
